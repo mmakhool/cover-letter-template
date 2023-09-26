@@ -8,7 +8,7 @@ fromalign=center, % center, if no logo is used, else left
 fromrule=true,
 frommobilephone,
 fromemail,
-fromlogo, % if a logo should be used, delete it otherwise
+% fromlogo, % if a logo should be used, delete it otherwise
 subject=titled,
 backaddress=false,
 draft=true, % set to true if this is the final version
@@ -53,22 +53,22 @@ final=false, % set this to true if this is the final version
 
 % --------------------------------------------------------------------------------
 % set koma variables, this needs to be edited by the user
-\newcommand{\mail}{john.smith@example.com}
-\setkomavar{fromname}[]{John Smith}
-\setkomavar{fromzipcode}{12345}
-\setkomavar{place}{Place}
-\setkomavar{signature}{\includegraphics[scale=0.05]{fig/signature.png}\\\usekomavar{fromname}}
-\setkomavar{fromaddress}{Street 1,
-\usekomavar{fromzipcode} \usekomavar{place}}
-\setkomavar{frommobilephone}{+1~234~56789}
-\setkomavar{subject}{Application~as~<POSITION>}
+\newcommand{\mail}{mmakhool6@gmail.com}
+\setkomavar{fromname}[]{Michael Makhool}
+\setkomavar{fromzipcode}{48327}
+% \setkomavar{place}{} 
+% \setkomavar{signature}{\includegraphics[scale=0.05]{fig/signature.png}\\\usekomavar{fromname}}
+% \setkomavar{fromaddress}{3140 Roselawn St, Commerce Township
+% \usekomavar{fromzipcode} \usekomavar{place}}
+\setkomavar{frommobilephone}{+1~248~421~6290}
+% \setkomavar{subject}{Application~as~<POSITION>}
 % --------------------------------------------------------------------------------
 \setkomavar{firstfoot}{%
 \parbox[b]{\linewidth}{%
 \centering\def\\{, }\usekomavar{fromname}, \usekomavar{fromemail}%
 }%
 }
-\setkomavar{fromlogo}{\includegraphics{fig/logo.pdf}} % delete this if no logo should be used
+% \setkomavar{fromlogo}{\includegraphics{fig/logo.pdf}} % delete this if no logo should be used
 \setkomavar{fromemail}{\href{mailto:\mail}{\mail}}
 \setkomavar{date}{\todaay}
 
@@ -88,23 +88,36 @@ final=false, % set this to true if this is the final version
 % --------------------------------------------------------------------------------
 % edit the company's address
 \newcommand{\address}{
-Company Name    \\
-Company Address \\
-Contact         \\
+To whom it may concern    \\
 }
 % --------------------------------------------------------------------------------
 
 \begin{document}
 
 \begin{letter}{\address}
-	\opening{To whom it may concern}
+	\opening{}
 
-	Insert here the text for the cover letter, this should be max. 1 page.
-	\closing{Yours faithfully}
+I am writing to express my enthusiasm for the Software Engineering position within your organization,
+and I am eager to bring my experience and passion for software development to contribute to your esteemed organization. 
+As a highly motivated and dedicated Software Engineer with a strong background in Full Stack Programming, Testing, and Maintaining
+enterprise software applications, I am confident in my ability to make a substantial impact on your team and projects.
 
-	\encl{
-		Attachments included in this application
-	}
+Over the past 6 years, I have consistently honed my skills in Information Technology, Business Support, Data Analytics, and Strategic Planning 
+within the dynamic landscape of a large corporate setting. In my most recent role, I demonstrated my expertise in Angular and Node by 
+developing a cutting-edge suite of tools that significantly enhanced efficiency and productivity for business support teams. 
+My adaptability and eagerness to learn new processes and technologies have allowed me to thrive on challenges and deliver innovative solutions.
+
+My journey as a Software Engineer has been fueled by a genuine love for learning, enabling me to embrace the ever-evolving tech industry
+and seek opportunities to expand my knowledge, keeping me at the forefront of innovation.
+
+Thank you for considering my application. I look forward to the possibility of contributing my expertise to the growth and success of the organization. 
+Please find my resume attached for your review. If you require any additional information, please do not hesitate to contact me.
+	
+\closing{Thank you!}
+
+%	\encl{
+%		Attachments included in this application
+%	}
 
 \end{letter}
 
